@@ -6,7 +6,7 @@ function redirect($url) {
 }
 
 function isLogined() {
-	if($_SESSION['login'] && $_SESSION['login']){
+	if($_SESSION['login'] && $_SESSION['password']){
 	return true;
 	}
 	else{
