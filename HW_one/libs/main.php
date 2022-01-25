@@ -1,2 +1,9 @@
-  <p><a href="/login"">Войти</a></p>
-  <p><a href="/registration">Зарегистрироваться</a></p>
+<?php
+  
+include ('../forms/main.html');
+include('../libs/func.php');
+
+
+if(isLogined()){
+	echo 'Hello, ' . $_SESSION['login'] . ' !';
+} 
